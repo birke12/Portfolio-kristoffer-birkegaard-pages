@@ -1,0 +1,109 @@
+.projectsContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 160px;
+}
+
+.projectsTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.projectCard {
+  position: relative;
+  background-size: cover; /* Crop to fill card, consistent layout */
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  aspect-ratio: 16 / 9; /* Standard landscape screenshot ratio */
+  width: 100%;
+  text-decoration: none;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projectCard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.projectContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+  /* Adjust the width to make it wider */
+  width: 80%; /* Adjust this value for the desired width */
+  max-width: 90%; /* Optional: limit the maximum width */
+  padding: 1rem; /* Add some padding for space around the text */
+  box-sizing: border-box; /* Ensure padding doesn’t affect overall width */
+}
+
+
+.projectCard:hover .projectContent {
+  opacity: 1;
+}
+
+.projectCard h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.projectCard p {
+  font-size: 1.0rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+}
