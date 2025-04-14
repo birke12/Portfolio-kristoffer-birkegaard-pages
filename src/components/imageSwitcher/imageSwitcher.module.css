@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .title {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  
+  .image {
+    width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .after {
+    transform: scale(1.05);
+  }
+  
+  .buttonContainer {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .button {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: #ccc;
+  }
+  
+  .active {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    cursor: zoom-out;
+  }
+  
+  .modalImage {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    cursor: auto;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  

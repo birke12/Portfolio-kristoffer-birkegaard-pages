@@ -1,4 +1,5 @@
 import About from "../components/About/About";
+import ImageSwitcher from "../components/imageSwitcher/ImageSwitcher";
 import PageHeader from "../components/pageheader/PageHeader";
 import Projects from "../components/projects/Projects";
 import Skills from "../components/skills/Skills";
@@ -14,6 +15,7 @@ function Home() {
  <About />
  <Skills />
  <Projects />
+ <ImageSwitcher />
     </>
   );
 }

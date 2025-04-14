@@ -15,14 +15,14 @@ const Projects = () => {
       link: "https://birke12.github.io/Future-Web-done-pages/",
       external: true,
     },
-    {
+  /*   {
       title: "Excalibur",
       description:
         "Vi skulle lave en hjemmeside for den fiktive rollespilsblub Excalibur, og forsiden skulle være et spil.",
       image: projectImage1,
       link: "/projects/1",
       external: false,
-    },
+    }, */
     {
       title: "Ancient Journeys",
       description:
