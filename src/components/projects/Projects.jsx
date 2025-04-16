@@ -10,7 +10,11 @@ const Projects = () => {
   const projectData = [
     {
       title: "Fremtidens Web",
-      description: "Et projekt der fokusere på Webudvikling i fremtiden. ",
+      description: <p>
+      Et projekt, der fokuserer på webudvikling i fremtiden. Designet er inspireret af kendte sci-fi-franchises som
+      <br />
+      Blade Runner og Cyberpunk.
+    </p>,
       image: projectImage3,
       link: "https://birke12.github.io/Future-Web-done-pages/",
       external: true,

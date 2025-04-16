@@ -10,6 +10,10 @@ import indesignIcon from "/assets/icons/indesignIcon.png"; // InDesign Icon
 import illustratorIcon from "/assets/icons/illustratorIcon.png"; // Illustrator Icon
 import afterEffectsIcon from "/assets/icons/afterEffectsIcon.png"; // After Effects Icon
 import wordpressIcon from "/assets/icons/wordpressIcon.png"; // Import WordPress icon
+import woocommerceIcon from "/assets/icons/woo.png"; // for example
+import premiereProIcon from "/assets/icons/premierepro.png"; // adjust path/filename as needed
+
+
 /* import premiereProIcon from "./assets/icons/premiere-pro-icon.png";
 import characterAnimatorIcon from "./assets/icons/character-animator-icon.png";
 import blenderIcon from "./assets/icons/blender-icon.png"; */
@@ -28,7 +32,7 @@ const skills = [
     icon: <FaCss3Alt size={50} color="#1572B6" />, // CSS icon from Font Awesome
     description:
       "Erfaren i at style websites med CSS, herunder animationer og responsiv design.",
-    level: "Mellem",
+    level: "Avanceret",
   },
   {
     name: "JavaScript",
@@ -62,8 +66,22 @@ const skills = [
     ),
     description:
       "Erfaring med at bruge WordPress til at skabe og administrere websites med brugerdefinerede temaer og plugins.",
-    level: "Mellem",
+    level: "Avanceret",
   },
+  {
+    name: "WooCommerce",
+    icon: (
+      <img
+        src={woocommerceIcon}
+        alt="WooCommerce"
+        style={{ width: "50px", height: "50px" }}
+      />
+    ),
+    description:
+      "Har arbejdet med WooCommerce til opsætning af webshops, produkthåndtering, betalingsgateways og tilpasning af design og funktionalitet.",
+    level: "Avanceret",
+  },
+  
 
   {
     name: "Bootstrap",
@@ -156,7 +174,7 @@ const skills = [
       "Erfaren i motion graphics og videokomposition med Adobe After Effects.",
     level: "Moderat erfaring",
   },
-  /* {
+  {
     name: "Premiere Pro",
     icon: (
       <img
@@ -166,10 +184,12 @@ const skills = [
       />
     ),
     description:
-      "Erfaring med videoredigering og filmproduktion med Adobe Premiere Pro.",
+      "Erfaren i videoredigering, og klipning med Adobe Premiere Pro.",
     level: "Moderat erfaring",
   },
-  {
+  
+
+/*   {
     name: "Character Animator",
     icon: (
       <img
@@ -194,7 +214,7 @@ const skills = [
     description:
       "Lidt erfaring med 3D-modellering og animation med Blender.",
     level: "Lidt erfaring",
-  }, */
+  },  */
 ];
 
 
@@ -259,9 +279,9 @@ const Skills = () => {
             <h3>{selectedSkill.name}</h3>
             <div className={styles.modalImage}>{selectedSkill.icon}</div>
             <p>{selectedSkill.description}</p>
-            {/*  <p className={styles.skillText}>
+             <p className={styles.skillText}>
               Færdighedsniveau: {selectedSkill.level}
-            </p> */}
+            </p>
           </div>
         </div>
       )}

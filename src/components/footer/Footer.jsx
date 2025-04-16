@@ -9,7 +9,7 @@ import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={styles.footerContainer}>
+    <footer id="kontakt" className={styles.footerContainer}  >
       {/* Sektion 1: Kort Info */}
       <div className={styles.footerSection}>
         <h2 className={styles.sectionHeader}>Kristoffer Birkegaard</h2>
