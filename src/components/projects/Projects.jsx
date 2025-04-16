@@ -28,8 +28,8 @@ const Projects = () => {
       description:
         "Vi skulle lave en rejseblog, og jeg valgte at fokusere på historiske og mytologiske steder.",
       image: projectImage2,
-      link: "/projects/2",
-      external: false,
+      link: "https://birke12.github.io/Myth-blog-main-pages2/",
+      external: true,
     },
   ];
 

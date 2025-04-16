@@ -8,9 +8,8 @@
   align-items: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-  background-color: rgb(29, 28, 28);
-  border-top: 2px solid rgb(255, 180, 118);
-  box-shadow: 0px -5px 10px rgb(255, 98, 0, 0.5);
+  background-color: rgb(20, 20, 20);
+
 }
 
 
@@ -24,11 +23,15 @@
 
 /* Section header */
 .sectionHeader {
-     font-family: "Oxanium", serif;
-  font-size: 1.2em; 
+  font-family: "Playfair Display", serif;
+  font-size: 1.5em; 
+  font-weight: bold;
   letter-spacing: 2px;
-  color: rgb(255, 230, 209);
-  text-shadow: 0 0 5px rgb(255, 98, 0), 0 0 15px rgb(255, 98, 0);
+  background: linear-gradient(45deg, #f6bd66, #ffe8ac, #f6bd66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   margin-bottom: 10px;
 }
 
@@ -36,17 +39,22 @@
 .sectionText {
   font-family: "Open Sans", serif;
   letter-spacing: 0.5px;
-  font-size: 10px; 
+  font-size: 12px; 
   line-height: 1.6;
   margin-bottom: 10px;
+  
 }
 
 /* Follow Us header */
 .followUsHeader {
-     font-family: "Oxanium", serif;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
   font-size: 1.2em; 
-  color: rgb(255, 230, 209);
-  text-shadow: 0 0 5px rgb(255, 98, 0), 0 0 15px rgb(255, 98, 0);
+  background: linear-gradient(45deg, #f6bd66, #ffe8ac, #f6bd66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   margin-bottom: 15px;
   letter-spacing: 1px;
   font-weight: 600;
@@ -62,8 +70,8 @@
 
 .icon {
   font-size: 2em;
-  color: rgb(255, 230, 209);
-  text-shadow: 0 0 5px rgb(255, 98, 0), 0 0 15px rgb(255, 98, 0);;
+  color: rgb(255, 255, 255);
+
   transition: color 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -82,25 +90,68 @@
 }
 
 .chatSection .icon {
-  font-size: 2em;
-  color: rgb(255, 230, 209);
-  text-shadow: 0 0 5px rgb(255, 98, 0), 0 0 15px rgb(255, 98, 0);
+  font-size: 2.7em;
+ color: white;
   margin-top: 5px;
   cursor: pointer;
 }
 
 .chatSection .icon:hover {
-  color: rgb(255, 230, 209);
-  text-shadow: 0 0 5px rgb(255, 98, 0), 0 0 15px rgb(255, 98, 0);
+
 }
 
 .chatSection p {
-  font-family: "Open Sans", serif;
-  font-size: 13px;
-  color: rgb(255, 230, 209);
-  text-shadow: 0 0 5px rgb(255, 98, 0), 0 0 15px rgb(255, 98, 0);
-  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: linear-gradient(45deg, #f6bd66, #ffe8ac, #ffe8ac, #ffe8ac, #ffe8ac, #ffe8ac, #f6bd66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  margin-top: 25px;
 }
+
+.chatSection {
+  display: flex;
+  align-items: center;
+ /*  gap: 0.5rem; */
+}
+
+.iconLink {
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+  color: inherit; /* så den følger temaets farve */
+}
+
+.iconLink:hover {
+  transform: scale(1.2);
+  color: #007bff; /* eller en accentfarve du bruger */
+}
+
+.icon {
+  font-size: 1.5rem; /* juster efter behov */
+}
+
+.iconLink {
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+  color: inherit;
+ /*  margin: 0 0.5rem; */
+}
+
+.iconLink:hover {
+  transform: scale(1.2);
+  color: #007bff; /* eller vælg farver, der matcher hvert ikon fx Facebook blå */
+}
+
+.icon {
+  font-size: 2.8rem;
+  cursor: pointer;
+}
+
+
 
 
 /* Mobile Media Query */

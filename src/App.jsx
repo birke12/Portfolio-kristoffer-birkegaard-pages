@@ -2,7 +2,7 @@ import { useRoutes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Navigation from "./components/navigation/Navigation";
-/* import Footer from "./components/footer/Footer"; */
+import Footer from "./components/footer/Footer";
 
 
 
@@ -21,7 +21,7 @@ function App() {
         <Navigation />
         <div className="content">{routes}</div>
    
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

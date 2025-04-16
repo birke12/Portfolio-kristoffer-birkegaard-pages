@@ -3,7 +3,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaYoutube,
-  FaCommentDots,
+  FaEnvelope,
 } from "react-icons/fa";
 import styles from "./footer.module.css";
 
@@ -12,21 +12,18 @@ const Footer = () => {
     <footer className={styles.footerContainer}>
       {/* Sektion 1: Kort Info */}
       <div className={styles.footerSection}>
-        <h2 className={styles.sectionHeader}>Fremtidens Web</h2>
+        <h2 className={styles.sectionHeader}>Kristoffer Birkegaard</h2>
         <p className={styles.sectionText}>
-          Velkommen til Fremtidens Web – din kilde til indsigt i webudviklingens
-          nyeste trends og teknologier. Vi deler inspiration, guides og analyser
-          af den digitale verden, så du altid er et skridt foran. Uanset om du
-          er nybegynder eller erfaren udvikler, er Fremtidens Web stedet, hvor
-          vi sammen udforsker, hvordan nettet udvikler sig.
+        Tak fordi du tog dig tid til at udforske min portfolio. Som webudvikler og grafiker brænder jeg for at skabe digitale løsninger med både funktion og æstetik i fokus.  
+        Har du spørgsmål, idéer eller ønsker du at samarbejde? Så er du mere end velkommen til at tage kontakt – jeg ser frem til at høre fra dig!
         </p>
       </div>
 
       {/* Sektion 2: Copyright & Juridisk Information */}
       <div className={styles.footerSection}>
         <p className={styles.sectionText}>
-          © 2025 Fremtidens Web. Alle rettigheder forbeholdes. Registreret i
-          Danmark, Undallslund, Skivevej 23 <br></br>CVR: 12345678
+         biirkegaard@gmail.com, <br />
+         Nørremøllevej 79, 1. <br />Viborg 8800, Danmark
         </p>
       </div>
 
@@ -36,40 +33,46 @@ const Footer = () => {
         <h3 className={styles.followUsHeader}>Følg os</h3>
 
         <div className={styles.socialIcons}>
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaFacebook className={styles.icon} />
-          </a>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className={styles.icon} />
-          </a>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin className={styles.icon} />
-          </a>
-          <a
-            href="https://www.youtube.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaYoutube className={styles.icon} />
-          </a>
-        </div>
+  <a
+    href="https://www.facebook.com/kristoffer.birkegaard"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Facebook"
+    className={styles.iconLink}
+  >
+    <FaFacebook className={styles.icon} />
+  </a>
+  <a
+    href="https://www.instagram.com/kristoffer_birkegaard/"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Instagram"
+    className={styles.iconLink}
+  >
+    <FaInstagram className={styles.icon} />
+  </a>
+  <a
+    href="https://www.linkedin.com/in/kristoffer-birkegaard-47b8781b9/"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="LinkedIn"
+    className={styles.iconLink}
+  >
+    <FaLinkedin className={styles.icon} />
+  </a>
+</div>
 
         <div className={styles.chatSection}>
-          <p className={styles.sectionText}>Chat med os</p>
-          <FaCommentDots className={styles.icon} />
-        </div>
+  <p className={styles.sectionText}>Send Email</p>
+  <a
+    href="biirkegaard@gmail.com"
+    className={styles.iconLink}
+    title="Send en email"
+  >
+    <FaEnvelope className={styles.icon} />
+  </a>
+</div>
+
       </div>
     </footer>
   );
