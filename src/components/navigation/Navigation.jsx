@@ -75,6 +75,12 @@ const Navigation = () => {
     </Link>
   </li>
   <li>
+  <NavLink to="/cvresume" onClick={() => setIsOpen(false)}>
+    Cv/Ansøgning
+  </NavLink>
+</li>
+
+  <li>
     <Link to="kontakt" smooth={true} duration={500} offset={-80} onClick={() => setIsOpen(false)}>
       Kontakt
     </Link>

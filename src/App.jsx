@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navigation from "./components/navigation/Navigation";
 import Footer from "./components/footer/Footer";
 import ScrollToHashElement from "./components/ScrollToHashElement/ScrollToHashElement";
+import CvResume from "./pages/cvResume/CvResume";
 
 
 
@@ -13,6 +14,7 @@ import ScrollToHashElement from "./components/ScrollToHashElement/ScrollToHashEl
 function App() {
   const routes = useRoutes([
     { path: "/", element: <Home /> },
+    { path: "/cvresume", element: <CvResume /> },
   
   ]);
 
