@@ -44,3 +44,16 @@
     color: #ededed; /* Adjust as needed */
     margin-left: 10px;
 }
+@media (max-width: 668px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    justify-content: center; /* Vertical centering */
+    height: 350px; 
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 50px;
+  }
+  }
