@@ -30,7 +30,7 @@ const Footer = () => {
       {/* Sektion 3: Sociale Medier & Chat */}
       <div className={styles.footerSection}>
         {/* Følg Os Sektion */}
-        <h3 className={styles.followUsHeader}>Følg os</h3>
+        <h3 className={styles.followUsHeader}>Socials</h3>
 
         <div className={styles.socialIcons}>
   <a
