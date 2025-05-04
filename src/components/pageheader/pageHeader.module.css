@@ -49,9 +49,11 @@
   height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 30%; /* Moves image content downward */
   border: 4px solid #ffffff20;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
+
 
 /* Responsive: stack vertically on mobile */
 @media (max-width: 768px) {
@@ -84,12 +86,14 @@
  
   }
   .profileImage {
+  
     width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #ffffff20;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  
   }
 
  

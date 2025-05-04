@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./PageHeader.module.css";
-import profileImage from "./profile.jpg"; // adjust path as needed
+import profileImage from "./profile.png"; // adjust path as needed
 
 const PageHeader = () => {
   return (
